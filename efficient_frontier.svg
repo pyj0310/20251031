@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+<style> .axis { stroke: #333; stroke-width: 2; } .grid { stroke: #ccc; stroke-width: 1; stroke-dasharray: 4 4; } .frontier { fill: none; stroke: #1f77b4; stroke-width: 3; } .asset { fill: #d62728; } .gmv { fill: #2ca02c; } .maxsharpe { fill: #9467bd; } .label { font-family: sans-serif; font-size: 14px; fill: #333; }</style>
+<line class="axis" x1="80" y1="520" x2="80" y2="50" />
+<line class="axis" x1="80" y1="520" x2="760" y2="520" />
+<line class="grid" x1="80.0" y1="50" x2="80.0" y2="520" />
+<text class="label" x="80.0" y="550" text-anchor="middle">19.40%</text>
+<line class="grid" x1="80" y1="50.0" x2="760" y2="50.0" />
+<text class="label" x="70" y="55.0" text-anchor="end">94.97%</text>
+<line class="grid" x1="216.0" y1="50" x2="216.0" y2="520" />
+<text class="label" x="216.0" y="550" text-anchor="middle">26.44%</text>
+<line class="grid" x1="80" y1="144.0" x2="760" y2="144.0" />
+<text class="label" x="70" y="149.0" text-anchor="end">79.05%</text>
+<line class="grid" x1="352.0" y1="50" x2="352.0" y2="520" />
+<text class="label" x="352.0" y="550" text-anchor="middle">33.49%</text>
+<line class="grid" x1="80" y1="238.0" x2="760" y2="238.0" />
+<text class="label" x="70" y="243.0" text-anchor="end">63.12%</text>
+<line class="grid" x1="488.0" y1="50" x2="488.0" y2="520" />
+<text class="label" x="488.0" y="550" text-anchor="middle">40.54%</text>
+<line class="grid" x1="80" y1="332.0" x2="760" y2="332.0" />
+<text class="label" x="70" y="337.0" text-anchor="end">47.19%</text>
+<line class="grid" x1="624.0" y1="50" x2="624.0" y2="520" />
+<text class="label" x="624.0" y="550" text-anchor="middle">47.59%</text>
+<line class="grid" x1="80" y1="426.0" x2="760" y2="426.0" />
+<text class="label" x="70" y="431.0" text-anchor="end">31.26%</text>
+<line class="grid" x1="760.0" y1="50" x2="760.0" y2="520" />
+<text class="label" x="760.0" y="550" text-anchor="middle">54.63%</text>
+<line class="grid" x1="80" y1="520.0" x2="760" y2="520.0" />
+<text class="label" x="70" y="525.0" text-anchor="end">15.33%</text>
+<polyline class="frontier" points="143.97,480.83 142.32,476.88 140.88,472.92 139.65,468.96 138.63,465.01 137.82,461.05 137.22,457.10 136.84,453.14 136.67,449.18 136.72,445.23 136.99,441.27 137.47,437.31 138.17,433.36 139.08,429.40 140.20,425.45 141.53,421.49 143.07,417.53 144.81,413.58 146.76,409.62 148.92,405.66 151.26,401.71 153.81,397.75 156.55,393.80 159.47,389.84 162.58,385.88 165.87,381.93 169.34,377.97 172.98,374.02 176.79,370.06 180.76,366.10 184.90,362.15 189.19,358.19 193.64,354.23 198.23,350.28 202.97,346.32 207.85,342.37 212.87,338.41 218.02,334.45 223.29,330.50 228.69,326.54 234.21,322.58 239.85,318.63 245.60,314.67 251.47,310.72 257.43,306.76 263.50,302.80 269.67,298.85 275.94,294.89 282.30,290.93 288.75,286.98 295.28,283.02 301.91,279.07 308.61,275.11 315.39,271.15 322.25,267.20 329.18,263.24 336.18,259.28 343.25,255.33 350.39,251.37 357.59,247.42 364.85,243.46 372.18,239.50 379.56,235.55 387.00,231.59 394.49,227.63 402.04,223.68 409.64,219.72 417.28,215.77 424.98,211.81 432.72,207.85 440.51,203.90 448.34,199.94 456.21,195.98 464.12,192.03 472.08,188.07 480.07,184.12 488.09,180.16 496.16,176.20 504.26,172.25 512.39,168.29 520.56,164.34 528.76,160.38 536.98,156.42 545.24,152.47 553.53,148.51 561.85,144.55 570.19,140.60 578.56,136.64 586.96,132.69 595.38,128.73 603.83,124.77 612.30,120.82 620.79,116.86 629.31,112.90 637.84,108.95 646.40,104.99 654.98,101.04 663.58,97.08 672.20,93.12 680.84,89.17" />
+<circle class="asset" cx="311.74" cy="460.78" r="6" />
+<text class="label" x="321.74" y="450.78">005930.KS</text>
+<circle class="asset" cx="271.39" cy="480.83" r="6" />
+<text class="label" x="281.39" y="470.83">AAPL</text>
+<circle class="asset" cx="703.33" cy="89.17" r="6" />
+<text class="label" x="713.33" y="79.17">NVDA</text>
+<circle class="gmv" cx="136.67" cy="448.13" r="7" />
+<text class="label" x="146.67" y="438.13">GMV</text>
+<circle class="maxsharpe" cx="343.00" cy="255.47" r="7" />
+<text class="label" x="353.00" y="245.47">Max Sharpe</text>
+<text class="label" x="420.00" y="580" text-anchor="middle">Annualized Volatility</text>
+<text class="label" x="20" y="285.00" transform="rotate(-90 20 285.00)" text-anchor="middle">Annualized Return</text>
+</svg>

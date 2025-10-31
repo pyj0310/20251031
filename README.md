@@ -38,6 +38,22 @@ Average (mean), minimum, and maximum values are computed over available rows per
 - AAPL closed at 245.27 with 61,782,400 shares traded.
 - NVDA closed at 183.16 with 266,534,400 shares traded.
 
+## Efficient Frontier Analysis
+Daily percentage returns were computed from the closing price series for all three tickers on dates where quotes were available for every asset. The statistics below are annualized with a 252-trading-day convention.
+
+### Annualized Return and Volatility
+| Ticker | Return | Volatility |
+| ------ | ------:| ----------:|
+| 005930.KS | 25.37% | 31.41% |
+| AAPL | 21.97% | 29.31% |
+| NVDA | 88.34% | 51.70% |
+
+### Portfolio Highlights
+- **Global minimum variance (GMV):** 44.6% 005930.KS, 49.4% AAPL, 6.1% NVDA — 27.51% expected return with 22.33% volatility.
+- **Maximum Sharpe (risk-free rate 0%):** 35.2% 005930.KS, 9.0% AAPL, 55.7% NVDA — 60.16% expected return with 33.03% volatility.
+
+![Efficient frontier chart showing annualized volatility on the x-axis and annualized return on the y-axis, with asset points and key portfolios highlighted.](efficient_frontier.svg)
+
 ## Suggested Usage
 1. Treat the CSV as a multi-index table: use the first row for the field and the second row for the ticker when loading it (e.g., `pd.read_csv('temp.csv', header=[0, 1])` in pandas).
 2. Filter out rows containing `NaN` values if you require contiguous trading histories for a given market.
