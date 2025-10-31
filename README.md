@@ -39,7 +39,7 @@ Average (mean), minimum, and maximum values are computed over available rows per
 - NVDA closed at 183.16 with 266,534,400 shares traded.
 
 ## Efficient Frontier Analysis
-Daily percentage returns were computed from the closing price series for all three tickers on dates where quotes were available for every asset. The statistics below are annualized with a 252-trading-day convention.
+Daily percentage returns were computed from the closing price series for all three tickers on dates where quotes were available for every asset. The returns were annualized with a 252-trading-day convention, and covariances/volatilities were scaled accordingly. All portfolio optimization assumes a 0% risk-free rate.
 
 ### Annualized Return and Volatility
 | Ticker | Return | Volatility |
@@ -49,8 +49,10 @@ Daily percentage returns were computed from the closing price series for all thr
 | NVDA | 88.34% | 51.70% |
 
 ### Portfolio Highlights
-- **Global minimum variance (GMV):** 44.6% 005930.KS, 49.4% AAPL, 6.1% NVDA — 27.51% expected return with 22.33% volatility.
-- **Maximum Sharpe (risk-free rate 0%):** 35.2% 005930.KS, 9.0% AAPL, 55.7% NVDA — 60.16% expected return with 33.03% volatility.
+- **Global minimum variance (GMV):** 44.6% 005930.KS, 49.4% AAPL, 6.1% NVDA — 27.51% expected return with 22.33% volatility (Sharpe ratio 1.23).
+- **Maximum Sharpe:** 35.2% 005930.KS, 9.0% AAPL, 55.7% NVDA — 60.16% expected return with 33.03% volatility (Sharpe ratio 1.82).
+
+The accompanying [`generate_efficient_frontier.py`](generate_efficient_frontier.py) script reproduces the statistics above, exports CSV summaries (`annualized_stats.csv`, `gmv_weights.csv`, and `max_sharpe_weights.csv`), and regenerates the visualization below:
 
 ![Efficient frontier chart showing annualized volatility on the x-axis and annualized return on the y-axis, with asset points and key portfolios highlighted.](efficient_frontier.svg)
 
